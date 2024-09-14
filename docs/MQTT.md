@@ -40,15 +40,6 @@ Standby
 Stop
 `openWB/set/vehicle/template/charge_template/#/chargemode/selected -> stop`
 
-_Work in Progress_
-
-## Statusnachrichten
-
-Wo wird welcher nützliche Inhalt gesendet. 
-
-Ladeprofil Status (verschachteltes JSON, muss entsprechend weiter decodiert werden...):
-openWB/vehicle/template/charge_template/1
-
 Setzen von min_Current für min+PV nachbauen:
 `openWB/set/vehicle/template/charge_template/#/chargemode/pv_charging/min_current`
 
@@ -64,8 +55,19 @@ SoC Update triggern:
 SoC im manuellen Modus setzen:
 `openWB/set/vehicle/#/soc_module/calculated_soc_state/manual_soc`
 
+> [!IMPORTANT]
+> Work in Progress. Feel free to contribute!
+
+
+## Statusnachrichten
+
+Wo wird welcher nützliche Inhalt gesendet. 
+
+Ladeprofil Status (verschachteltes JSON, muss entsprechend weiter decodiert werden...):
+openWB/vehicle/template/charge_template/1
+
 ### Lademodus
 Lademodus des angesteckten Auto wird in den LP geschrieben. Solange immer dasselbe Auto dran steckt ist das gleich, aber wenn Du ein anderes Auto ansteckst, bei mir z.b. ein Gastauto und Du nur den Lademodus deines normalen Auto ausliest und damit steuerst, ist der dortige Lademodus halt dann nicht der eigentliche des LP
 
-
-_Work in Progress_
+> [!IMPORTANT]
+> Work in Progress. Feel free to contribute!
