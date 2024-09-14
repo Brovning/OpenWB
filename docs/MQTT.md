@@ -28,6 +28,9 @@ Setzen des Lademodus
 | Standby | standby |
 | Stop | stop |
 
+> [!CAUTION]
+> Lademodus des angesteckten Auto wird in den LP geschrieben. Solange immer dasselbe Auto dran steckt ist das gleich, aber wenn Du ein anderes Auto ansteckst, bei mir z.b. ein Gastauto und Du nur den Lademodus deines normalen Auto ausliest und damit steuerst, ist der dortige Lademodus halt dann nicht der eigentliche des LP
+
 "Minimal Stromstärke" auf z.B. 6A (nur in PV-Laden!)
 `openWB/set/vehicle/template/charge_template/#/chargemode/pv_charging/min_current -> 6`
 
@@ -41,7 +44,7 @@ Ladepunkt sperren für Priosteuerung der LP:
 `openWB/set/chargepoint/#/set/manual_lock`
 
 SoC Update triggern:
-`openWB/set/vehicle/1#/get/force_soc_update`
+`openWB/set/vehicle/#/get/force_soc_update`
 
 SoC im manuellen Modus setzen:
 `openWB/set/vehicle/#/soc_module/calculated_soc_state/manual_soc`
@@ -56,10 +59,6 @@ Wo wird welcher nützliche Inhalt gesendet.
 
 Ladeprofil Status (verschachteltes JSON, muss entsprechend weiter decodiert werden...):
 `openWB/vehicle/template/charge_template/#`
-
-
-### Lademodus
-Lademodus des angesteckten Auto wird in den LP geschrieben. Solange immer dasselbe Auto dran steckt ist das gleich, aber wenn Du ein anderes Auto ansteckst, bei mir z.b. ein Gastauto und Du nur den Lademodus deines normalen Auto ausliest und damit steuerst, ist der dortige Lademodus halt dann nicht der eigentliche des LP
 
 > [!IMPORTANT]
 > Die Liste ist unvollständig! Gerne kannst du deinen Beitrag leisten!
