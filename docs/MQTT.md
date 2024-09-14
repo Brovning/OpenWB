@@ -25,11 +25,14 @@ Lademodus auf "Sofortladen"
 PV-Laden
 `openWB/set/vehicle/template/charge_template/#/chargemode/selected -> pv_charging`
 
-"Minimal Stromstärke" im PV-Laden auf z.B. 6A 
+"Minimal Stromstärke" auf z.B. 6A (nur PV-Laden!)
 `openWB/set/vehicle/template/charge_template/#/chargemode/pv_charging/min_current -> 6`
 
-SoC-Limit auf z.B. 80% setzen
+SoC-Limit auf z.B. 80% setzen (nur PV-Laden!)
 `openWB/set/vehicle/template/charge_template/#/chargemode/pv_charging/max_soc -> 80`
+
+Einspeisegrenze beachten (nur PV-Laden!)
+`openWB/set/vehicle/template/charge_template/#/chargemode/pv_charging/feed_in_limit -> true`
 
 Zielladen
 `openWB/set/vehicle/template/charge_template/#/chargemode/selected -> scheduled_charging`
